@@ -1,0 +1,51 @@
+<h1 id="using-native-node-modules">Using native Node modules</h1>
+
+<p>The native Node modules are supported by Electron, but since Electron is
+using a different V8 version from official Node, you have to manually specify
+the location of Electron&#39;s headers when building native modules.</p>
+
+<h2 id="native-node-module-compatibility">Native Node module compatibility</h2>
+
+<p>Since Node v0.11.x there were vital changes in the V8 API. So generally all
+native modules written for Node v0.10.x wouldn&#39;t work for Node v0.11.x. And
+because Electron internally uses Node v0.11.13, it carries with the same
+problem.</p>
+
+<p>To solve this, you should use modules that support Node v0.11.x,
+<a href="https://www.npmjs.org/browse/depended/nan">many modules</a> do support both now.
+For old modules that only support Node v0.10.x, you should use the
+<a href="https://github.com/rvagg/nan">nan</a> module to port it to v0.11.x.</p>
+
+<h2 id="how-to-install-native-modules">How to install native modules</h2>
+
+<h3 id="the-easy-way">The Easy Way</h3>
+
+<p>The most straightforward way to rebuild native modules is via the 
+<a href="https://github.com/paulcbetts/electron-rebuild"><code>electron-rebuild</code></a> package, 
+which handles the manual steps of downloading headers and building native modules:</p>
+<div class="highlight"><pre><code class="language-sh" data-lang="sh">npm install --save-dev electron-rebuild
+
+<span class="c"># Every time you run npm install, run this too</span>
+./node_modules/.bin/electron-rebuild
+</code></pre></div>
+<h3 id="the-node-gyp-way">The node-gyp way</h3>
+
+<p>To build Node modules with headers of Electron, you need to tell <code>node-gyp</code>
+where to download headers and which version to use:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">cd</span> /path-to-module/
+<span class="nv">$ HOME</span><span class="o">=</span>~/.electron-gyp node-gyp rebuild --target<span class="o">=</span>0.25.0 --arch<span class="o">=</span>ia64 --dist-url<span class="o">=</span>https://atom.io/download/atom-shell
+</code></pre></div>
+<p>The <code>HOME=~/.electron-gyp</code> changes where to find development headers. The
+<code>--target=0.25.0</code> is version of Electron. The <code>--dist-url=...</code> specifies
+where to download the headers. The <code>--arch=ia64</code> says the module is built for
+64bit system.</p>
+
+<h3 id="the-npm-way">The npm way</h3>
+
+<p>You can also use <code>npm</code> to install modules, the steps are exactly the same with
+Node modules, except that you need to setup some environment variables:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">export </span><span class="nv">npm_config_disturl</span><span class="o">=</span>https://atom.io/download/atom-shell
+<span class="nb">export </span><span class="nv">npm_config_target</span><span class="o">=</span>0.25.0
+<span class="nb">export </span><span class="nv">npm_config_arch</span><span class="o">=</span>x64
+<span class="nv">HOME</span><span class="o">=</span>~/.electron-gyp npm install module-name
+</code></pre></div>

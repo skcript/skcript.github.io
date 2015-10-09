@@ -1,0 +1,39 @@
+{
+  "name": "skcript.github.io",
+  "version": "0.10.0",
+  "description": "The [website](http://skcript.github.io) for [Open Source at Skcript](https://github.com/skcript/skcript.github.io).",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skcript/skcript.github.io.git"
+  },
+  "author": "Skcript",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skcript/skcript.github.io/issues"
+  },
+  "scripts": {
+    "test": "tape spec/*.js | tap-spec"
+  },
+  "homepage": "http://skcript.github.io",
+  "dependencies": {
+    "cpr": "^0.4.0",
+    "glob": "^5.0.10",
+    "gunzip-maybe": "^1.1.0",
+    "mkdirp": "^0.5.1",
+    "nugget": "^1.5.1",
+    "request": "^2.55.0",
+    "rimraf": "^2.3.3",
+    "tar-fs": "^1.5.0",
+    "through2": "^0.6.5",
+    "titlecase": "^1.0.2",
+    "yaml-front-matter": "^3.2.3",
+    "yamljs": "^0.2.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-link-checker": "^0.1.0",
+    "tap-spec": "^4.0.0",
+    "tape": "^4.0.0"
+  }
+}

@@ -1,0 +1,13 @@
+title: Open Source at Skcript
+email: business@skcript.com
+description: 'A collection of open source projects from Skcript'
+baseurl: 'http://skcript.github.io'
+twitter_username: SkcriptHQ
+github_username: skcript
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+    extensions: [with_toc_data]
+gems:
+    - jekyll-redirect-from
+latest_version: v0.10.0
