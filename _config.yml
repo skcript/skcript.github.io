@@ -1,48 +1,13 @@
-# Site settings
-language:               ""
-title:                  "Skcript + Open Source = ❤️"
-description:            "A collection of open source projects from Skcript"
-google-verification:    ""
-
-# Handling Reading
-include:
-  - ".htaccess"
-  - "_pages"
-
-exclude:
-  - "/assets/"
-  - "bower.json"
-  - "composer.json"
-  - "composer.lock"
-  - "DOC.md"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "/gulp/"
-  - "gulpfile.js"
-  - "Gruntfile.coffee"
-  - "LICENSE.md"
-  - "Makefile"
-  - "node_modules"
-  - "npm-debug.log"
-  - "package.json"
-  - "README.md"
-  - "rev-manifest.json"
-
-# Serving
-url:            "http://skcript.github.io"
-baseurl:        "" # does not include hostname
+title: Open Source at Skcript
+email: business@skcript.com
+description: 'A collection of open source projects from Skcript'
+baseurl: 'http://skcript.github.io'
 twitter_username: SkcriptHQ
-github_username:  skcript
-email: friends@skcript.com
-
-# Outputting
-permalink:        "/blog/:year/:title/"
-paginate_path:    "/blog/page:num"
-paginate:         5
-
-
-# Plugins
-gems:             ["jekyll-sitemap", "jekyll-paginate"]
-
-# Build settings
-markdown: kramdown
+github_username: skcript
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+    extensions: [with_toc_data]
+gems:
+    - jekyll-redirect-from
+latest_version: v0.10.0
