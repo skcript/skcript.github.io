@@ -19,6 +19,7 @@ exclude:
   - "Gemfile.lock"
   - "/gulp/"
   - "gulpfile.js"
+  - "Gruntfile.coffee"
   - "LICENSE.md"
   - "Makefile"
   - "node_modules"

@@ -1,0 +1,27 @@
+{
+  "name": "skcript.github.io",
+  "version": "2.0.0",
+  "description": "A collection of open source projects from Skcript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skcript/skcript.github.io.git"
+  },
+  "author": "Karthik K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skcript/skcript.github.io/issues"
+  },
+  "homepage": "https://github.com/skcript/skcript.github.io#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-contrib-connect": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-exec": "^0.4.6"
+  }
+}
