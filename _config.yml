@@ -1,0 +1,12 @@
+# Site settings
+title: Skcript Open Source
+email: friends@skcript.com
+description: > # this means to ignore newlines until "baseurl:"
+  We get benefited from open-source code every single day. And here are some of the projects we're giving back to the community.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://skcript.github.io" # the base hostname & protocol for your site
+twitter_username: SkcriptHQ
+github_username:  skcript
+
+# Build settings
+markdown: kramdown
