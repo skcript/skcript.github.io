@@ -1,0 +1,16 @@
+{
+  "name": "skcript.github.io",
+  "version": "1",
+  "description": "A collection of open source projects from Skcript ",
+  "main": "index.js",
+  "repository": "https://github.com/skcript/skcript.github.io.git",
+  "author": "skcript",
+  "license": "Apache License, Version 2.0",
+  "dependencies": {
+    "blendid": "^4.1.1"
+  },
+  "scripts": {
+    "start": "yarn run blendid",
+    "build": "yarn run blendid -- build"
+  }
+}

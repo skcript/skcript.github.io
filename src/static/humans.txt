@@ -1,0 +1,12 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Praveen Juge -- Developer -- @praveenjuge
+    Karthik -- Developer -- @imkarthikk
+
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5

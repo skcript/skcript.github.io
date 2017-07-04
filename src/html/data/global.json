@@ -1,3 +1,15 @@
 {
-  "message": "Work in Progress. Come back after some time, Thanks!"
+  "sitename": "Skcript Open Source",
+  "tagline": "Open Source at Skcript",
+  "url": "https://skcript.github.io/",
+  "languageCode": "en-us",
+  "description": "We get benefited from open-source code every single day. And here are some of the projects we're giving back to the community.",
+  "keywords": "open source, open, source, chennai, web, developer, designer, skcript, dribbble, twitter, telegram, UI, UX, engineer, performance, speed",
+  "subject": "Open Source",
+  "type": "Open Source",
+  "twitter": "@skcriptHQ",
+  "email": "friends@skcript.com",
+  "color": "#141414",
+  "image": "/images/og.png",
+  "message": "We're working on something great, check this page after some time!"
 }
