@@ -10,11 +10,13 @@ A collection of open source projects from Skcript.
 ### Compiling & Running
 1. Clone this repo: `git clone https://github.com/skcript/skcript.github.io.git`
 2. Now run `cd skcript.github.io`
-3. Just run `yarn start`
-4. Access the site at `http://localhost:4000`
+3. Checkout Dev Branch `git checkout dev`
+4. Just run `yarn start`
+5. Access the site at `http://localhost:4000`
 
 ### Authors
-* [Karthik K](https://twitter.com/imkarthikk)
+[Karthik K](https://twitter.com/imkarthikk)
+[Praveen Juge](https://twitter.com/praveenjuge)
 
 License
 --------
