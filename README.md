@@ -10,7 +10,7 @@ A collection of open source projects from Skcript.
 ### Compiling & Running
 1. Clone this repo: `git clone https://github.com/skcript/skcript.github.io.git`
 2. Now run `cd skcript.github.io`
-3. Just run `jekyll serve --watch`
+3. Just run `yarn start`
 4. Access the site at `http://localhost:4000`
 
 ### Authors
@@ -19,7 +19,7 @@ A collection of open source projects from Skcript.
 License
 --------
 
-    Copyright 2016 Skcript.
+    Copyright 2017 Skcript.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
