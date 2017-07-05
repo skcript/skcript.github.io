@@ -9,12 +9,11 @@ h6 {
 }
 
 p {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     color: dimgray;
 }
 
 body {
-    background-color: #F7F7F7;
+    background-color: #FCFCFC;
     position: relative;
     height: auto;
     min-height: 100%;
@@ -35,7 +34,7 @@ body {
         left: 0;
         background-color: transparent;
         background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
-        background-size: 130px 100%;
+        background-size: 100px 100%;
         @include breakpoint (tablet) {
             background-size: 50px 100%;
         }
@@ -53,5 +52,5 @@ img {
 }
 
 .wrapper {
-    padding-top: 120px;
+    padding-top: 100px;
 }
