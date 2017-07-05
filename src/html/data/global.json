@@ -12,6 +12,32 @@
    "color":"#141414",
    "image":"/images/og.png",
    "message":"We're working on something great, check this page after some time!",
+   "otherrepos":[
+      {
+         "title":"Foundation Emails",
+         "description":"Zurb Foundation framework for better emails.",
+         "cat": "web",
+         "link":"https://github.com/zurb/foundation-emails"
+      },
+      {
+         "title":"libvips",
+         "description":"A fast image processing library with low memory needs.",
+         "cat": "other",
+         "link":"https://github.com/jcupitt/libvips"
+      },
+      {
+         "title":"Pastel",
+         "description":"Terminal output styling with intuitive and clean API.",
+         "cat": "dev",
+         "link":"https://github.com/peter-murach/pastel"
+      },
+      {
+         "title":"Ruby on Rails",
+         "description":"Web Framework optimized for developer happiness.",
+         "cat": "rails",
+         "link":"http://github.com/rails/rails"
+      }
+   ],
    "repos":[
       {
          "title":"Better Authentic",

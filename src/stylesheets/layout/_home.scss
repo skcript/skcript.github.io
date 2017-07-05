@@ -30,7 +30,6 @@
 .oswrapper {
     margin: 0px 180px 50px 200px;
     margin-bottom: 20px;
-    padding-top: 50px;
     outline: 0;
     border: 0;
     @include breakpoint (tablet) {
@@ -41,6 +40,8 @@
         margin-bottom: 30px;
         color: #222;
         font-size: 22px;
+        margin-top: 80px;
+        text-decoration: underline;
     }
     a {
         color: #141414;

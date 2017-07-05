@@ -20,6 +20,17 @@
             </div>
             {% endfor %}
         </div>
+        <h1>Projects our engineers contribute to.</h1>
+        <div class="grid">
+            {% for repo in otherrepos %}
+            <div class="grid-item {{ repo.cat }}">
+                <a href="{{ repo.link }}" target="_blank" rel="noopener">
+                    <h4>{{ repo.title }} <span>&rarr;</span></h4>
+                </a>
+                <p>{{ repo.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
 <a href="https://github.com/skcript/skcript.github.io/" target="_blank" rel="noopener">
