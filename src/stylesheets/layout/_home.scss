@@ -1,6 +1,6 @@
 .quote {
     border-bottom: 1px solid #f2f2f2;
-    padding-bottom: 70px;
+    padding: 70px 0px;
     width: 100%;
     blockquote {
         font-size: 40px;
@@ -29,6 +29,7 @@
 
 .oswrapper {
     margin: 0px 180px 50px 200px;
+    margin-bottom: 20px;
     padding-top: 50px;
     outline: 0;
     border: 0;
@@ -51,10 +52,11 @@
         font-weight: 300;
     }
     p {
-        font-size: 14px;
+        font-size: 15px;
         font-style: normal;
         font-weight: normal;
         margin-bottom: 0px;
+        letter-spacing: 0.5px;
     }
     .grid-item {
         height: 170px;
