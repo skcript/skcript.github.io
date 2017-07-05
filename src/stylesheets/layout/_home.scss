@@ -8,18 +8,34 @@
         letter-spacing: 0.5px;
         color: #4a4a4a;
         margin: 30px 200px 30px 200px;
+        @include breakpoint (tablet) {
+            margin: 10px;
+            margin-bottom: 20px;
+            margin-top: 25px;
+            font-size: 30px;
+            line-height: 50px;
+        }
     }
     span {
         margin-left: 50px;
         font-size: 25px;
         color: #4a4a4a;
         margin-left: 200px;
+        @include breakpoint (tablet) {
+            margin-left: 10px;
+        }
     }
 }
 
 .oswrapper {
-    margin: 50px 180px 50px 200px;
-    h1{
+    margin: 0px 180px 50px 200px;
+    padding-top: 50px;
+    outline: 0;
+    border: 0;
+    @include breakpoint (tablet) {
+        margin: 10px;
+    }
+    h1 {
         font-weight: 400;
         margin-bottom: 30px;
         color: #4a4a4a;
