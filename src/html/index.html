@@ -4,29 +4,26 @@
 {% block content %}
 
 <div class="wrapper">
-
-	<div class="quote">
-		<blockquote>“No one is useless in this world who lightens the burdens of another.”</blockquote>
-		<span>- Charles Dickens</span>
-	</div>
-
-	<div class="oswrapper" id="filter">
-		<h1>Our Open Source Projects</h1>
-		<div class="grid">
-		{% for repo in repos %}
-		  <div class="grid-item {{ repo.cat }}">
-			  <a href="{{ repo.link }}" target="_blank" rel="noopener">
-					<h4>{{ repo.title }} <span>&rarr;</span></h4>
-				</a>	
-				<p>{{ repo.description }}</p>
-		  </div>
-		{% endfor %}  
-		</div>
-	</div>
-
+    <div class="quote">
+        <blockquote>“No one is useless in this world who lightens the burdens of another.”</blockquote>
+        <span>- Charles Dickens</span>
+    </div>
+    <div class="oswrapper" id="filter">
+        <h1>Our Open Source Projects</h1>
+        <div class="grid">
+            {% for repo in repos %}
+            <div class="grid-item {{ repo.cat }}">
+                <a href="{{ repo.link }}" target="_blank" rel="noopener">
+                    <h4>{{ repo.title }} <span>&rarr;</span></h4>
+                </a>
+                <p>{{ repo.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
-
 <a href="https://github.com/skcript/skcript.github.io/" target="_blank" rel="noopener">
-	<canvas width="400" height="300" id="myLove"></canvas>
+    <canvas width="400" height="200" id="myLove"></canvas>
 </a>
+
 {% endblock %}
