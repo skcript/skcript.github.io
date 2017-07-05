@@ -1,17 +1,13 @@
-// grab an element
 var myElement = document.querySelector("header");
-// construct an instance of Headroom, passing the element
 var headroom  = new Headroom(myElement, {
 	"offset": 80,
   "tolerance": 0
 });
-// initialise
 headroom.init();
 
 // ****************************************************************************
 
 var $grid = $('.grid').isotope({
-  // options
   itemSelector: '.grid-item',
   layoutMode: 'vertical'
 });
@@ -41,7 +37,6 @@ $('body,html,li').click(function(e){
 // ****************************************************************************
 
 
-// Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
