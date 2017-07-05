@@ -1,0 +1,18 @@
+{
+	"demo": "Checking",
+	"repos":
+	[
+		{
+			"title": "Get.Set.Rails.",
+			"description":"Setup Ruby and Rails with one bash command.",
+			"link":	"http://skcript.github.io/get-set-rails/"
+		},
+
+		{
+			"title": "Skcript CSS Styleguide",
+			"description":"Internal Styleguide. Open Sourced to the community.",
+			"link":	"http://skcript.github.io/styleguide-css"
+		}
+		
+	]
+}

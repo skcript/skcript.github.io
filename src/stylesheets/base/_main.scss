@@ -1,0 +1,48 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Zilla Slab', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+    position: relative;
+    height: auto;
+    min-height: 100%;
+    padding: 0.1px;
+    margin: 0px;
+    &:before {
+        position: absolute;
+        width: auto;
+        height: auto;
+        z-index: 9999;
+        content: '';
+        display: block;
+        pointer-events: none;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: transparent;
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+        background-size: 100px 100%;
+    }
+}
+
+.button {
+    &:focus {
+        outline: 0;
+    }
+}
+
+img {
+    @include noselect();
+}
+
+.wrapper {
+    padding-top: 120px;
+}

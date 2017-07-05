@@ -1,0 +1,69 @@
+@mixin breakpoint($point) {
+    @if $point==large-desktop {
+        @media (min-width: 104em) {
+            @content ;
+        }
+    }
+    @else if $point==desktop {
+        @media (max-width: 70em) {
+            @content ;
+        }
+    }
+    @else if $point==laptop {
+        @media (max-width: 64em) {
+            @content ;
+        }
+    }
+    @else if $point==tablet {
+        @media (max-width: 50em) {
+            @content ;
+        }
+    }
+    @else if $point==phablet {
+        @media (max-width: 37.5em) {
+            @content ;
+        }
+    }
+    @else if $point==mobileonly {
+        @media (max-width: 37.5em) {
+            @content ;
+        }
+    }
+}
+
+@mixin transition($args) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin placeholder($color) {
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+    &:-moz-placeholder {
+        color: $color;
+    }
+}
+
+@mixin noselect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+@mixin clearfix {
+    zoom: 1;
+    &:before,
+    &:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+    &:after {
+        clear: both;
+    }
+}

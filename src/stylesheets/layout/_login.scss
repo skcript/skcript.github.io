@@ -1,0 +1,136 @@
+.hero-login {
+    padding: 60px 0px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .red {
+        margin-top: -10px;
+        color: $msg-danger;
+        border: 1px solid $msg-danger;
+        border-radius: 4px;
+        padding: 7px 10px;
+    }
+    .red-box {
+        margin: 10px -80px;
+        margin-top: -20px;
+        @include breakpoint(mobileonly) {
+            margin: 0px;
+            margin-bottom: 20px;
+        }
+    }
+    .btn {
+        cursor: pointer;
+        padding: 10px 50px;
+        background-color: #2ECC71;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+        &:hover {
+            background-color: #29B564;
+            transform: translateY(-1px);
+            transition: all .15s ease;
+        }
+    }
+    .hero-card {
+        padding: 40px 130px;
+        background-color: $white;
+        margin: 0 auto;
+        color: $KI_text_home;
+        border-radius: 8px;
+        margin-top: 100px;
+        @include breakpoint(mobileonly) {
+            padding: 40px;
+            margin: 0 5px;
+            margin-top: 50px;
+        }
+        img {
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-weight: bold;
+            font-size: 26px;
+        }
+        .thanks {
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: -5px;
+        }
+        form {
+            .new-user {
+                margin-bottom: 0px;
+                a {
+                    color: $KI_text_home;
+                    font-weight: 800;
+                }
+            }
+            .btn {
+                cursor: pointer;
+                padding: 10px 50px;
+                background-color: #2ECC71;
+                color: $white;
+                text-transform: uppercase;
+                font-weight: 800;
+                letter-spacing: 0.5px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                border-radius: 4px;
+                -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+                &:hover {
+                    background-color: #29B564;
+                }
+            }
+            .flex-wrap {
+                display: flex;
+                justify-content: space-between;
+                margin: -10px -20px;
+                label,
+                a {
+                    color: #424452;
+                    font-size: 15px;
+                }
+            }
+            .form-field {
+                text-align: left;
+                margin: 0px -20px;
+                padding: 5px 0px;
+                label {
+                    color: $KI_text_home;
+                    span {
+                        color: $msg-danger;
+                        font-weight: 900;
+                    }
+                }
+                input {
+                    box-shadow: none;
+                    border-radius: 5px;
+                    border: 1.5px solid #D8DDE6;
+                    margin-top: 3px;
+                    @include placeholder(#959595);
+                }
+            }
+        }
+    }
+}
+
+.waves {
+    background: $KI_blue;
+    img {
+        width: 100%;
+        margin-bottom: -2px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-user-drag: none;
+    }
+}

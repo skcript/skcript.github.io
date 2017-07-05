@@ -1,0 +1,209 @@
+.hero-tutorial {
+    height: 100vh;
+    background: url('../images/tutorial-hero.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .hero-text {
+        -webkit-align-items: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        display: -moz-box;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        .button {
+            margin: 0 auto;
+            background: $button_green;
+            font-weight: 800;
+            font-size: 20px;
+            border-radius: 5px;
+            padding: 15px 30px;
+            margin-bottom: 35px;
+        }
+    }
+    h1 {
+        color: $white;
+        font-weight: 800;
+        font-size: 40px;
+        letter-spacing: 1.5px;
+        margin: 0px;
+        margin-bottom: 10px;
+        padding-top: 50px;
+    }
+    p {
+        color: $white;
+        letter-spacing: 1.5px;
+        padding: 0px 150px;
+        margin-bottom: 40px;
+        font-size: 21px;
+    }
+    img {
+        margin: 0 auto;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        transform: scale(1);
+        &:hover {
+            -webkit-transition: all 200ms ease-in;
+            -webkit-transform: scale(1.1);
+            -ms-transition: all 200ms ease-in;
+            -ms-transform: scale(1.5);
+            -moz-transition: all 200ms ease-in;
+            -moz-transform: scale(1.1);
+            transition: all 200ms ease-in;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.filter-tutorial {
+    padding: 40px 100px;
+    background: $white;
+    .filter-cond {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .active {
+            color: $black;
+        }
+        p {
+            margin-bottom: 0px;
+            text-transform: uppercase;
+            color: $KI_footer_link;
+        }
+    }
+}
+
+.other-tutorial {
+    z-index: 1000;
+    background: $KI_bg;
+    padding: 0px 130px;
+    padding-top: 150px;
+    @include breakpoint(mobileonly) {
+        padding: 30px 20px;
+        padding-top: 150px;
+    }
+    a{
+            outline: 0px;
+        // position: absolute;
+   display: block;
+   background: url(../images/play.svg);
+   top: 20px;
+   left: 20px;
+    }
+    h4 {
+        @include breakpoint(mobileonly) {
+            margin-top: 20px;
+        }
+    }
+    .big {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: white;
+        border-radius: 6px;
+        margin-bottom: 60px;
+        -webkit-box-shadow: 0px 2px 24px -2px rgba(0, 0, 0, 0.12);
+        -moz-box-shadow: 0px 2px 24px -2px rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 2px 24px -2px rgba(0, 0, 0, 0.12);
+        &:hover {
+            transition: 0.3s all ease;
+            -webkit-box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.01);
+            -moz-box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.01);
+            box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.01);
+        }
+        @include breakpoint(mobileonly) {
+            flex-direction: column;
+        }
+        .big-content {
+            padding: 5px 20px;
+        }
+        img {
+            width: 100%;
+            outline: 0px;
+            z-index: 1000;
+            border-radius: 6px 0px 0px 6px;
+            @include breakpoint(mobileonly) {
+                border-radius: 6px 6px 0px 0px;
+            }
+        }
+        h4 {
+            margin-top: 10px;
+        }
+        p {
+            color: $dark-grey;
+            letter-spacing: 0.5px;
+            font-size: 15px;
+            font-weight: 400;
+            padding-right: 10px;
+        }
+    }
+    .small-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-flow: row wrap;
+    }
+    .small {
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 50px;    
+        height: 300px;
+        background-color: white;
+        width: 300px;
+        border-radius: 6px;
+        -webkit-box-shadow: 0px 2px 24px -2px rgba(0, 0, 0, 0.12);
+        -moz-box-shadow: 0px 2px 24px -2px rgba(0, 0, 0, 0.12);
+        box-shadow: 0px 2px 24px -2px rgba(0, 0, 0, 0.12);
+        @include breakpoint(mobileonly) {
+            width: 100%;
+        }
+        &:hover {
+            transition: 0.3s all ease;
+            -webkit-box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.01);
+            -moz-box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.01);
+            box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.01);
+        }
+        img {
+            border-radius: 6px 6px 0px 0px;
+            width: 300px;
+            outline: 0px;
+            @include breakpoint(mobileonly) {
+                width: 100%;
+            }
+            &::after {
+                content: 'fsf';
+                height: 40px;
+                width: 40px;
+                position: absolute;
+            }
+        }
+        p {
+            padding: 20px 10px;
+        }
+    }
+    p {
+        color: #424452;
+        font-weight: 700;
+        @include breakpoint(mobileonly) {
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+    }
+}

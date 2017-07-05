@@ -1,0 +1,265 @@
+.hero-features {
+    background: #F0F4F7;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    .hero-text {
+        -webkit-align-items: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        display: -moz-box;
+        display: -moz-flex;
+        display: -ms-flexbox; 
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 130px;
+        .button {
+            margin: 0 auto;
+            background: $button_green;
+            font-weight: 800;
+            font-size: 20px;
+            padding: 15px 50px;
+            margin-top: -10px;
+            border-radius: 5px;
+            -webkit-box-shadow: 0px 13px 25px -8px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0px 13px 25px -8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 13px 25px -8px rgba(0, 0, 0, 0.2);
+            &:hover {
+                transform: translateY(-1px);
+                transition: all .15s ease;
+            }
+        }
+    }
+    span {
+        color: $KI_text_home;
+        display: inline;
+        a {
+            display: inline;
+            color: $KI_text_home;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    h1 {
+        color: $KI_text_home;
+        font-weight: 800;
+        font-size: 40px;
+        letter-spacing: 1.5px;
+        margin: 0px;
+        margin-bottom: 10px;
+        padding-top: 30px;
+    }
+    p {
+        color: $KI_text_home;
+        letter-spacing: 1.5px;
+        padding: 0px 150px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        @include breakpoint(tablet) {
+            padding: 0px 20px;
+        }
+    }
+    img {
+        width: 90%;
+        margin-top: 40px;
+        border-radius: 5px 5px 0px 0px;
+        -webkit-box-shadow: 0px -3px 29px -10px rgba(0, 0, 0, 0.26);
+        -moz-box-shadow: 0px -3px 29px -10px rgba(0, 0, 0, 0.26);
+        box-shadow: 0px -3px 29px -10px rgba(0, 0, 0, 0.26);
+    }
+    a {
+        display: flex;
+        justify-content: center;
+    }
+    .img-hero {
+        width: 90px;
+        position: absolute;
+        box-shadow: none;
+        border-radius: 0px;
+        margin-top: 0px;
+        bottom: 0px;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1);
+        transition: all 200ms ease-in;
+        outline: none;
+        transform: scale(1);
+        cursor: pointer;
+        @include breakpoint(tablet) {
+            width: 50px;
+            bottom: -120px;
+        }
+        &:hover {
+            -webkit-transition: all 200ms ease-in;
+            -webkit-transform: scale(1.1);
+            -ms-transition: all 200ms ease-in;
+            -ms-transform: scale(1.5);
+            -moz-transition: all 200ms ease-in;
+            -moz-transform: scale(1.1);
+            transition: all 200ms ease-in;
+            transform: scale(1.1);
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.miss-features {
+    padding-top: 70px;
+    background: $white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    color: $KI_text_home;
+    flex-direction: column;
+    .sprite {
+        svg {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+    }
+    h2{
+        padding: 0px 20px;
+    }
+    .three-lay {
+        padding: 70px 10px;
+    }
+    .tick {
+        margin-left: 0px;
+        padding-top: 50px;
+        list-style: none;
+        li {
+            margin-bottom: 20px;
+            font-size: 18px;
+            margin-left: 20px;
+            &:before {
+                content: url(../images/tick.svg);
+                height: 30px;
+                width: 20px;
+                position: relative;
+                left: -10px;
+            }
+        }
+    }
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        line-height: 30px;
+    }
+    .title {
+        display: flex;
+        margin-bottom: 15px;
+        @include breakpoint(tablet) {
+            h4{
+                font-size: 22px;
+            }
+        }
+        h4 {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.sep-features {
+    background: #F0F4F7;
+    padding: 50px 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include breakpoint(tablet) {
+        flex-direction: column-reverse;
+    }
+    img {
+        margin-right: -400px;
+        border-radius: 7px;
+        width: 90%;
+        -webkit-box-shadow: 0px -3px 29px -10px rgba(0, 0, 0, 0.26);
+        -moz-box-shadow: 0px -3px 29px -10px rgba(0, 0, 0, 0.26);
+        box-shadow: 0px -3px 29px -10px rgba(0, 0, 0, 0.26);
+        @include breakpoint(tablet) {
+            margin: 0 auto;
+        }
+    }
+    .feature-block {
+        padding-top: 10px;
+        padding-bottom: 30px;
+        h6 {
+            font-weight: 500;
+            font-size: 18px;
+        }
+        p {
+            color: $KI_text_home;
+            padding-right: 100px;
+            @include breakpoint(tablet) {
+                padding-right: 0px;
+            }
+        }
+    }
+    ul {
+        li {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+    h3 {
+        color: $KI_text_home;
+        font-size: 40px;
+        font-weight: 300;
+        @include breakpoint(tablet) {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.rearrange {
+    background: $white;
+    @include breakpoint(tablet) {
+        flex-direction: column !important;
+    }
+    img {
+        margin-right: 30px;
+        margin-left: -500px;
+        width: 90%;
+        @include breakpoint(tablet) {
+            margin: 0 auto;
+        }
+    }
+    h3 {
+        padding-left: 35px;
+        @include breakpoint(tablet) {
+            padding-left: 0px;
+        }
+    }
+    .feature-block {
+        padding-left: 35px;
+        @include breakpoint(tablet) {
+            padding-left: 0px;
+        }
+    }
+}
+
+.top-shadow {
+    position: relative;
+    z-index: 20;
+    -webkit-box-shadow: 0px -8px 20px -8px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px -8px 20px -8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px -8px 20px -8px rgba(0, 0, 0, 0.2);
+}

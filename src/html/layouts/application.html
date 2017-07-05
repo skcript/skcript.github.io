@@ -10,10 +10,15 @@
 </head>
 
 <body>
-
+		{% include "shared/header.html" %}
+		
     {% block content %}{% endblock %}
 
-    <script type="text/javascript">"serviceWorker"in navigator&&window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").then(function(n){},function(n){console.log("f",n)})});</script>
+    {% block javascript %}
+    <script src="{{ base_path }}javascripts/app.js"></script>
+    {% endblock %}
+
+    <!-- <script type="text/javascript">"serviceWorker"in navigator&&window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").then(function(n){},function(n){console.log("f",n)})});</script> -->
 </body>
 
 </html>
