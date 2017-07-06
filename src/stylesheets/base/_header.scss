@@ -6,11 +6,19 @@
     z-index: 9999;
     flex-direction: column;
     height: 100vh;
+    @include breakpoint (tablet) {
+        flex-direction: row;
+        width: 100%;
+        height: 80px;
+    }
     .oslogo {
         margin-left: 30px;
         position: absolute;
         bottom: 10px;
         @include breakpoint (tablet) {
+            position: relative;
+            top: 0px;
+            bottom: none;
             margin-left: 10px;
         }
     }
@@ -62,7 +70,7 @@
 
 .nav-toggle {
     position: absolute;
-    right: 35px;
+    right: 25px;
     top: 30px;
     z-index: 9999;
     cursor: pointer;

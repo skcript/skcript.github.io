@@ -53,4 +53,7 @@ img {
 
 .wrapper {
     padding-left: 300px;
+    @include breakpoint (tablet) {
+        padding-left: 0px;
+    }
 }

@@ -4,6 +4,10 @@
     margin-bottom: 0px;
     margin-right: 180px;
     padding-bottom: 70px;
+    @include breakpoint (tablet) {
+        margin: 10px;
+        margin-top: 130px;
+    }
     blockquote {
         font-size: 40px;
         line-height: 60px;
@@ -12,7 +16,7 @@
         margin: 0px;
         margin-bottom: 20px;
         @include breakpoint (tablet) {
-            margin: 10px;
+            margin: 0px;
             margin-bottom: 20px;
             margin-top: 25px;
             font-size: 30px;
@@ -24,7 +28,7 @@
         color: dimgray;
         line-height: 30px;
         @include breakpoint (tablet) {
-            margin-left: 10px;
+            margin-left: 0px;
         }
     }
 }
