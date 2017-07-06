@@ -1,9 +1,10 @@
 .quote {
-    border-bottom: 1px solid #f2f2f2;
-    margin: 100px;
+//    border-bottom: 1px solid #f2f2f2;
+    padding: 100px;
     margin-bottom: 0px;
-    margin-right: 180px;
+    padding-right: 180px;
     padding-bottom: 70px;
+    background: #F8F8F9;
     @include breakpoint (tablet) {
         margin: 10px;
         margin-top: 130px;
@@ -24,9 +25,11 @@
         }
     }
     span {
-        font-size: 17px;
-        color: dimgray;
-        line-height: 30px;
+        font-size: 15px;
+        color: #222;
+        letter-spacing: .025em;
+        line-height: 1.55556;
+        font-weight: 300;
         @include breakpoint (tablet) {
             margin-left: 0px;
         }
@@ -54,7 +57,7 @@
         text-decoration: none;
     }
     h4 {
-        font-size: 25px;
+        font-size: 20px;
         margin: 0px;
         font-weight: 300;
         span {
@@ -65,9 +68,10 @@
     p {
         font-size: 15px;
         font-style: normal;
-        font-weight: normal;
+        font-weight: 300;
         margin-bottom: 0px;
-        letter-spacing: 0.5px;
+        letter-spacing: .025em;
+        line-height: 1.55556;
     }
     .grid-item {
         height: 170px;
