@@ -1,13 +1,16 @@
 .quote {
     border-bottom: 1px solid #f2f2f2;
-    padding: 70px 0px;
-    width: 100%;
+    margin: 100px;
+    margin-bottom: 0px;
+    margin-right: 180px;
+    padding-bottom: 70px;
     blockquote {
         font-size: 40px;
         line-height: 60px;
         letter-spacing: 0.5px;
         color: #222;
-        margin: 30px 200px 30px 200px;
+        margin: 0px;
+        margin-bottom: 20px;
         @include breakpoint (tablet) {
             margin: 10px;
             margin-bottom: 20px;
@@ -17,11 +20,9 @@
         }
     }
     span {
-        margin-left: 50px;
         font-size: 17px;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
         color: dimgray;
-        margin-left: 200px;
+        line-height: 30px;
         @include breakpoint (tablet) {
             margin-left: 10px;
         }
@@ -29,7 +30,7 @@
 }
 
 .oswrapper {
-    margin: 0px 180px 50px 200px;
+    margin: 0px 180px 50px 100px;
     margin-bottom: 20px;
     outline: 0;
     border: 0;
@@ -41,7 +42,7 @@
         margin-bottom: 30px;
         color: #222;
         font-size: 22px;
-        margin-top: 80px;
+        padding-top: 80px;
         text-decoration: underline;
     }
     a {
