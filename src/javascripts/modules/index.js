@@ -1,4 +1,7 @@
-
+$('.osbuttons li a').on('click', function(){
+    $('.osbuttons li a.check').removeClass('check');
+    $(this).addClass('check');
+});
 
 // ****************************************************************************
 
