@@ -18,8 +18,9 @@
     }
     span {
         margin-left: 50px;
-        font-size: 25px;
-        color: #222;
+        font-size: 17px;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: dimgray;
         margin-left: 200px;
         @include breakpoint (tablet) {
             margin-left: 10px;
