@@ -1,13 +1,14 @@
 .quote {
-//    border-bottom: 1px solid #f2f2f2;
+    //    border-bottom: 1px solid #f2f2f2;
     padding: 100px;
     margin-bottom: 0px;
     padding-right: 180px;
     padding-bottom: 70px;
     background: #F8F8F9;
     @include breakpoint (tablet) {
-        margin: 10px;
-        margin-top: 130px;
+        margin: 0px;
+        padding: 100px 10px;
+        padding-top: 120px;
     }
     blockquote {
         font-size: 40px;

@@ -21,8 +21,8 @@
         @include breakpoint (tablet) {
             position: relative;
             top: 0px;
-            bottom: none;
-            margin-left: 10px;
+            bottom: 0px;
+            margin-left: 15px;
         }
     }
     .oscategory {
@@ -109,7 +109,7 @@
 }
 
 .hamburger span {
-    background: #141414;
+    background: #FFF;
     display: block;
     position: absolute;
     height: 2px;
