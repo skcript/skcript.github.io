@@ -10,7 +10,7 @@ var $grid = $('.grid').isotope({
   layoutMode: 'vertical'
 });
 
-$('.osbuttons').on( 'click', 'li', function() {
+$('.osbuttons li a').on( 'click', function() {
   var filterValue = $(this).attr('data-filter');
   $grid.isotope({ filter: filterValue });
 });

@@ -22,7 +22,7 @@
       {
          "title":"libvips",
          "description":"A fast image processing library with low memory needs.",
-         "cat": "other",
+         "cat": "other ml",
          "link":"https://github.com/jcupitt/libvips"
       },
       {
