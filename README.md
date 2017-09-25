@@ -2,6 +2,8 @@
 
 A collection of open source projects from Skcript.
 
+![Skcript Open Source Image](skcriptopen.png)
+
 ## Compiling & Running
 1. Clone this repo: `git clone https://github.com/skcript/skcript.github.io.git`
 2. Now run `cd skcript.github.io`
