@@ -47,7 +47,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## About
 
-![Skcript](http://www.skcript.com/static/skcript_norm.png)
+<p><img src="http://www.skcript.com/static/skcript_norm.png" width="120"/></p>
 
 This project is maintained by Skcript. The names and logos for
 Skcript are properties of Skcript.
