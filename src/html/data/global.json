@@ -14,6 +14,12 @@
    "message":"We're working on something great, check this page after some time!",
    "otherrepos":[
       {
+         "title":"Hyperledger Composer",
+         "description":"Composer is a framework for building Blockchain business networks",
+         "cat": "other",
+         "link":"https://github.com/hyperledger/composer"
+      },
+      {
          "title":"Foundation Emails",
          "description":"Zurb Foundation framework for better emails.",
          "cat": "web",
