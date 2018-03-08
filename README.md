@@ -11,6 +11,7 @@ A collection of open source projects from Skcript.
 4. Run `yarn install`
 5. Start it with `yarn start`
 6. Access the site at `http://localhost:4000`
+7. After working on it, you can publish the site by running `yarn start gh-pages`
 
 ## Contributing
 
